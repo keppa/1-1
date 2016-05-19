@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title></title>
+    <meta name="description" content="">
+              
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+              
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/index-style.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container-fluid" id="navbar-container">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><img src="images/logo.png"></a>
+            <h3 class="navbar-text navbar-left"><small>1-1 Website</small></h3>
+          </div><!-- end navbar-header -->
+
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html" class="btn-link"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+              <li><a href="#" class="btn-link" data-toggle="modal" data-target="#logInModal">Log In</a></li>
+
+              <!-- Log In Modal -->
+              <div class="modal fade" id="logInModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">Log In</h4>
+                    </div><!-- end modal-header -->
+                    <div class="modal-body">
+                      <form class="form-horizontal">
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="inputUserName">Username</label>
+                          <div class="col-sm-5">
+                            <input class="form-control" id="inputUserName" placeholder="User Name" type="text"></input>
+                          </div>
+                          <div class="col-sm-5">
+                            <a href="#" class="btn btn-sm btn-link">Forget the password?</a>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="inputPassWord">Password</label>
+                          <div class="col-sm-5">
+                            <input class="form-control" id="inputPassWord" type="password" placeholder="Password"></input>
+                          </div>
+                          <div class="col-sm-5">
+                            <a href="#" class="btn btn-sm btn-link">Don't have a account. Sign up</a>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-9">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox">Keep Me Log In</input>
+                              </label>
+                            </div>
+
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox">Remember Password</input>
+                              </label>
+                            </div>  
+                          </div>
+                          <div class="col-sm-3">
+                            <button class="btn btn-dafault pull-right" type="submit" id="logInBtn">Log In</button>
+                          </div>
+                        </div>
+                      </form><!-- end form -->
+                    </div><!-- end modal-body -->
+                  </div><!-- end modal-content -->
+                </div><!-- end modal-dialog -->
+              </div><!-- end modal -->
+
+              <li><a href="#" class="btn-link">Sign Up</a></li>
+              <li><a href="MyAccount.html" class="btn-link">MyAccount</a></li>
+            </ul>
+          </div><!-- end navbar-collapse -->
+        </div><!-- end navbar-container -->
+      </nav><!-- end navabr-default -->
+    </div><!-- end navbar-container -->
+
+    <div class="container-fluid" id="carousel-container">
+      <div class="carousel slide" id="carousel-show" data-ride="carousel">
+        <!-- carousel indicators -->
+        <ol class="carousel-indicators">
+          <li class="active" data-slide-to="0" data-target="#carousel-show"></li>
+          <li data-slide-to="1" data-target="#carousel-show"></li>
+          <li data-slide-to="2" data-target="#carousel-show"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="active item" id="slide1" onclick="window.open('http://google.com')">
+            <div class="carousel-caption">
+              <h3>Click <small>here to show</small> How to Join US!</h3>
+              <p>The right way to open 1-1!</p>
+            </div>
+          </div>
+          <div class="item" id="slide2" onclick="window.open('http://baidu.com')">
+            <div class="carousel-caption">
+              <h3>Top Service Provider <small>in this</small> Week!</h3>
+              <p>Check the top list of service provider, see are you in the list!</p>
+            </div>
+          </div>
+          <div class="item" id="slide3" onclick="window.open('http://youtube.com')">
+            <div class="carousel-caption">
+              <h3>How <small>to be a</small> Service Provider!</h3>
+              <p>Hand by hand telling you how to start your own bussiness in 1-1!</p>
+            </div>
+          </div>
+        </div><!-- end carousel-inner -->
+        <a class="left carousel-control" data-slide="prev" href="#carousel-show" id="left-carousel-control" aria-hidden="true">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a><!-- end left-carousel-control -->
+        <a class="right carousel-control" data-slide="next" href="#carousel-show" id="right-carousel-control">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a><!-- end right-carousel-control -->
+      </div><!-- end carousel slide -->
+    </div><!-- end carousel-container -->
+    <hr>
+
+    <div class="container-fluid" id="content-container">
+      <div class="col-lg-3">
+        <div class="border-class">
+          <form>
+            <div class="form-group">
+              <label>Location</label>
+              <select class="form-control">
+                <option>Chicago</option>
+                <option>New York</option>
+                <option>Califonia</option>
+                <option>Michigan</option>
+              </select>
+            </div><!-- end location-list -->
+            <div class="form-group">
+              <label>Service Type</label>
+              <select class="form-control">
+                <option>Driving Learning</option>
+                <option>Homework Tutor</option>
+                <option>BBQ Even Hosting</option>
+                <option>Short term Transport</option>
+              </select>
+            </div><!-- end service-list -->
+            <div class="form-group">
+              <label>Price</label>
+              <select class="form-control">
+                <option>Lower than $20</option>
+                <option>$20-$40</option>
+                <option>$40-$100</option>
+                <option>Upper than $100</option>
+              </select>
+            </div>
+              <div class="row">
+                <div class="btn-group pull-right">
+                  <button type="submit" class="btn btn-danger btn-md" id="resetBtn">Reset</button>
+                  <button type="submit" class="btn btn-success btn-md" id="applyBtn">Apply</button>
+                </div>
+              </div><!-- end btn-group row -->
+          </form>
+        </div><!-- end border-class -->
+      </div><!-- end filliter -->
+
+      <div class="col-lg-9">
+        <div class="border-class">
+          <div class="row" id="search-bar-form">
+          <form class="form-inline pull-right">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="You can search in here"></form>
+              <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"> Search</span></button>
+            </div>
+          </form><!-- end search-form -->
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-md-4">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/330x190" data-toggle="modal" data-target="#content-modal">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/330x190" data-toggle="modal" data-target="#content-modal">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/330x190" data-toggle="modal" data-target="#content-modal">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/330x190" data-toggle="modal" data-target="#content-modal">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/330x190" data-toggle="modal" data-target="#content-modal">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/330x190" data-toggle="modal" data-target="#content-modal">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/330x190" data-toggle="modal" data-target="#content-modal">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/330x190" data-toggle="modal" data-target="#content-modal">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/330x190" data-toggle="modal" data-target="#content-modal">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/330x190" data-toggle="modal" data-target="#content-modal">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/330x190" data-toggle="modal" data-target="#content-modal">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/330x190" data-toggle="modal" data-target="#content-modal">
+              </a>
+            </div>
+          </div><!-- end of row of thumbnail -->
+
+          <div class="modal fade" id="content-modal" tabindex="-1" role="dialog" aria-labelledby="#content-modal-label">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="content-modal-label">Quick look</h4>
+                </div><!-- end modal-header -->
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-4" id="profile-photo">
+                      <img src="http://placehold.it/250x250" class="img-circle" alt="profile photo">
+                    </div><!-- end profile photo -->
+                    <div class="col-lg-8">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">Name</div>
+                        <div class="panel-body">Keppa Zhou</div>
+                        <div class="panel-heading">Years</div>
+                        <div class="panel-body">Senior</div>
+                        <div class="panel-heading">Phone</div>
+                        <div class="panel-body">269-251-9525</div>
+                      </div><!-- end panel -->
+                    </div><!-- end profile Info -->
+                  </div>
+                  <h4>Servise Provioded:</h4>
+                  <div class="well well-lg">
+                    <ul>
+                      <li><span class="label label-default">Driving Learning</span></li>
+                      <li><span class="label label-default">Longterm Transistor</span></li>
+                      <li><span class="label label-default">Holiday Storge</span></li>
+                      <li><span class="label label-default">Driving Learning</span></li>
+                      <li><span class="label label-default">Longterm Transistor</span></li>
+                      <li><span class="label label-default">Holiday Storge</span></li>
+                      <li><span class="label label-default">Driving Learning</span></li>
+                      <li><span class="label label-default">Longterm Transistor</span></li>
+                      <li><span class="label label-default">Holiday Storge</span></li>
+                    </ul>
+                  </div><!-- end well -->
+                </div><!-- end modal-body -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+                  <a href="" class="btn btn-success btn-sm">See more details</a>
+                </div><!-- end modal-footer -->
+              </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+          </div><!-- end content-modal -->
+
+
+          <div class="row">
+            <div class="btn-toolbar pull-right" role="toolbar" id="toolbar-homepage">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default"><span>&laquo;</span></button>
+                <button type="button" class="btn btn-default">1</button>
+                <button type="button" class="btn btn-default">2</button>
+                <button type="button" class="btn btn-default">3</button>
+                <button type="button" class="btn btn-default">4</button>
+                <button type="button" class="btn btn-default">5</button>
+                <button type="button" class="btn btn-default">6</button>
+                <button type="button" class="btn btn-default"><span>&raquo;</span></button>
+              </div>
+            </div><!-- end btn-toolbar -->
+          </div><!-- end btn-group row -->
+        </div><!-- end border-class -->
+      </div><!-- end thumbnails -->
+    </div><!-- end content-container -->
+    
+    <div class="container-fluid" id="footer-container">
+      <nav class="navbar navbar-default navbar-static-bottom" id="footer-navbar">
+        <div class="container">
+          <ul class="footer-ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Follow Us</a></li>
+            <li class="dropup">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Contact Us <strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><span class="glyphicon glyphicon-phone"></span> Call Us</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span> Facebook Us</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-heart-empty"></span> Email Us</a></li>
+              </ul><!-- end dropdown-menu -->
+            </li><!-- end dropdown -->
+          </ul>
+          <p class="pull-right">Copyright &copy; 2016 1-1</p>
+        </div><!-- end container -->
+      </nav>
+    </div><!-- end footer-container -->
+
+
+    <!-- First try for the online version of jQuery-->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>window.jQuery || document.write('<script src="js/jquery-2.2.3.min.js"><\/script>')</script>
+    
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/index-script.js"></script>
+  </body>
+</html>

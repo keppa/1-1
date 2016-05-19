@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+							
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+							
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="css/MyAccount-style.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+						<span class="sr-only"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="homepage.html" class="navbar-brand"><img src="images/logo.png"></a>
+					<h3 class="navbar-text navbar-left"><small>1-1 Website</small></h3>
+				</div><!-- end navbar-header -->
+
+				<div class="collapse navbar-collapse" id="navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="homepage.html" class="btn-link"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+						<li><a href="#" class="btn-link" data-toggle="modal" data-target="#logInModal">Log In</a></li>
+
+						<!-- Log In Modal -->
+						<div class="modal fade" id="logInModal" tabindex="-1" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title">Log In</h4>
+									</div><!-- end modal-header -->
+									<div class="modal-body">
+										<form class="form-horizontal">
+											<div class="form-group">
+												<label class="control-label col-sm-2" for="inputUserName">Username</label>
+												<div class="col-sm-5">
+													<input class="form-control" id="inputUserName" placeholder="User Name" type="text"></input>
+												</div>
+												<div class="col-sm-5">
+													<a href="#" class="btn btn-sm btn-link">Forget the password?</a>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="control-label col-sm-2" for="inputPassWord">Password</label>
+												<div class="col-sm-5">
+													<input class="form-control" id="inputPassWord" type="password" placeholder="Password"></input>
+												</div>
+												<div class="col-sm-5">
+													<a href="#" class="btn btn-sm btn-link">Don't have a account. Sign up</a>
+												</div>
+											</div>
+											<hr>
+											<div class="row">
+												<div class="col-sm-9">
+													<div class="checkbox">
+														<label>
+															<input type="checkbox">Keep Me Log In</input>
+														</label>
+													</div>
+
+													<div class="checkbox">
+														<label>
+															<input type="checkbox">Remember Password</input>
+														</label>
+													</div>	
+												</div>
+												<div class="col-sm-3">
+													<button class="btn btn-dafault pull-right" type="submit" id="logInBtn">Log In</button>
+												</div>
+											</div>
+										</form><!-- end form -->
+									</div><!-- end modal-body -->
+								</div><!-- end modal-content -->
+							</div><!-- end modal-dialog -->
+						</div><!-- end modal -->
+
+						<li><a href="#" class="btn-link">Sign Up</a></li>
+						<li><a href="MyAccount.html" class="btn-link">MyAccount</a></li>
+					</ul>
+				</div><!-- end navbar-collapse -->
+			</div><!-- end navbar-container -->
+		</nav><!-- end navabr-default -->
+
+		<div class="container-fluid" dir="content-container">
+			<div class="row">
+				<div class="col-md-6 jumbotron" id="account-jumbotron">
+					<ul class="list-group col-md-6" id="account-info">
+						<li class="list-group-item">
+							<a href="#" class="btn btn-link btn-md"><span class="glyphicon glyphicon-bell"></span> Account Information</a>
+						</li>
+						<li class="list-group-item">
+							<a href="#" class="btn btn-link btn-md"><span class="glyphicon glyphicon-user"></span> Basic Information</a>
+						</li>
+						<li class="list-group-item">
+							<a href="#" class="btn btn-link btn-md"><span class="glyphicon glyphicon-th-list"></span> Services Record</a>
+						</li>
+					</ul><!-- end list group -->
+					<ul class="col-md-6 list-group" id="inbox-alert">
+						<li class="list-group-item">
+							<a href="#" class="btn btn-link btn-md">Message <span class="badge">11</span></a>
+						</li>
+						<li class="list-group-item">
+							<a href="#" class="btn btn-link btn-md">Request <span class="badge">4</span></a>
+						</li>
+						<li class="list-group-item">
+							<a href="#" class="btn btn-link btn-md">Customer Review <span class="badge">22</span></a>
+						</li>
+					</ul><!-- end inbox-alert -->
+					<div class="row" id="service-button">
+						<div class="col-md-6">
+							<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#submit-service-modal">Submit Services</button>
+						</div><!-- end service-button -->
+						<div class="col-md-6">
+							<button type="button" class="btn btn-primary btn-lg" data-toggle="popover" data-placement="top" id="popover-btn">Manage Services</button>
+						</div><!-- end service-button -->
+					</div><!-- end row -->
+				</div><!-- end jumbotron -->
+				<div class="col-md-6 panel panel-default" id="calender-panel-table">
+					<div class="panel-heading">Service Remember</div>
+					<div class="table-responsive">
+						<table class="table table-striped" id="activity-table"></table><!-- end table -->
+					</div>
+				</div><!-- end calender-panel-table -->
+			</div><!-- end row -->
+			
+		</div><!-- end content-container -->
+		
+		<footer class="footer">
+			<div class="container-fluid">
+				<ul class="footer-ul">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Follow Us</a></li>
+					<li class="dropup">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Contact Us <strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-phone"></span> Call Us</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span> Facebook Us</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-heart-empty"></span> Email Us</a></li>
+						</ul><!-- end dropdown-menu -->
+					</li><!-- end dropdown -->
+				</ul>
+				<p class="pull-right">Copyright &copy; 2016 1-1</p>
+			</div><!-- end container -->	
+		</footer>
+		<!-- Submit Services Modal -->
+		<div class="modal fade" id="submit-service-modal" tabindex="-1" role="dialog" aria-labelledby="submit-service-modal-label">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="submit-service-modal-label">New Service</h4>
+					</div><!-- end modal-header -->
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label for="input-service-name" class="col-sm-2 control-label">Service Name</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="input-service-name" placeholder="Service Name">
+								</div><!-- end input-service-name input -->
+							</div><!-- end form-group -->
+							<div class="form-group">
+								<label for="input-start-date" class="col-sm-2 control-label">Start Date</label>
+								<div class="col-sm-4">
+									<input type="date" class="form-control" id="input-start-date">
+								</div>
+								<label for="input-end-date" class="col-sm-2 control-label">End Date</label>
+								<div class="col-sm-4">
+									<input type="date" class="form-control" id="input-end-date">
+								</div>
+							</div><!-- end form-group -->
+							<div class="form-group">
+								<label for="input-price" class="col-sm-2 control-label">Price$</label>
+								<div class="col-sm-4">
+									<input type="number" class="form-control" id="input-price" step="5" value="50">
+								</div>
+								<label for="input-location" class="col-sm-2 control-label">Location</label>
+								<div class="col-sm-4">
+									<select class="form-control">
+										<option>Chicago</option>
+										<option>New York</option>
+										<option>Califonia</option>
+										<option>Michigan</option>
+									</select>
+								</div>
+							</div><!-- end form-group -->
+							<div class="form-group">
+								<label for="input-description" class="col-sm-2 control-label">Description</label>
+								<div class="col-sm-10">
+									<textarea class="form-control" id="input-description" rows="10" placeholder="More Details here...."></textarea>
+								</div>
+							</div><!-- end form-group -->
+						</form><!-- end form-horizontal -->
+					</div><!-- end modal-body -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-success">Submit</button>
+					</div><!-- end modal-footer -->
+				</div><!-- end modal-content -->
+			</div><!-- end modal-dialog -->
+		</div><!-- end modal -->
+
+		<!-- Manage popover panel-table -->
+		<div class="panel panel-default" id="manage-popover-table">
+			<div class="table-responsive">
+				<table class="table table-striped" id="modal-manage-service-table">
+					<!-- <thead>
+						<tr>
+							<td>#</td>
+							<td>Service Name</td>
+							<td>Time</td>
+							<td>Price</td>
+						</tr>
+					</thead> --><!-- end thead -->
+					<!-- <tbody>
+						<tr>
+							<td>1</td>
+							<td>Driving Learning</td>
+							<td>01/11/2016-03/29/2016</td>
+							<td>45</td>
+							<td>
+								<div class="btn-group row">
+									<button type="submit" class="btn btn-sm btn-link">edit</button>
+									<button type="submit" class="btn btn-sm btn-link">delete</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Driving Learning</td>
+							<td>01/11/2016-03/29/2016</td>
+							<td>45</td>
+							<td>
+								<div class="btn-group row">
+									<button type="submit" class="btn btn-sm btn-link">edit</button>
+									<button type="submit" class="btn btn-sm btn-link">delete</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Driving Learning</td>
+							<td>01/11/2016-03/29/2016</td>
+							<td>45</td>
+							<td>
+								<div class="btn-group row">
+									<button type="submit" class="btn btn-sm btn-link">edit</button>
+									<button type="submit" class="btn btn-sm btn-link">delete</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Longterm transport</td>
+							<td>02/01/2016-06/09/2016</td>
+							<td>300</td>
+							<td>
+								<div class="btn-group row">
+									<button type="submit" class="btn btn-sm btn-link">edit</button>
+									<button type="submit" class="btn btn-sm btn-link">delete</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Longterm transport</td>
+							<td>02/01/2016-06/09/2016</td>
+							<td>300</td>
+							<td>
+								<div class="btn-group row">
+									<button type="submit" class="btn btn-sm btn-link">edit</button>
+									<button type="submit" class="btn btn-sm btn-link">delete</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>Longterm transport</td>
+							<td>02/01/2016-06/09/2016</td>
+							<td>300</td>
+							<td>
+								<div class="btn-group row">
+									<button type="submit" class="btn btn-sm btn-link">edit</button>
+									<button type="submit" class="btn btn-sm btn-link">delete</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>Drving learning</td>
+							<td>08/31/2016-12/14/2016</td>
+							<td>50</td>
+							<td>
+								<div class="btn-group row">
+									<button type="submit" class="btn btn-sm btn-link">edit</button>
+									<button type="submit" class="btn btn-sm btn-link">delete</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>Drving learning</td>
+							<td>08/31/2016-12/14/2016</td>
+							<td>50</td>
+							<td>
+								<div class="btn-group row">
+									<button type="submit" class="btn btn-sm btn-link">edit</button>
+									<button type="submit" class="btn btn-sm btn-link">delete</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>Drving learning</td>
+							<td>08/31/2016-12/14/2016</td>
+							<td>50</td>
+							<td>
+								<div class="btn-group row">
+									<button type="submit" class="btn btn-sm btn-link">edit</button>
+									<button type="submit" class="btn btn-sm btn-link">delete</button>
+								</div>
+							</td>
+						</tr>
+					</tbody> --><!-- end tbody -->
+				</table><!-- end table -->
+			</div><!-- end table-responsive -->
+		</div><!-- end manage-popover-table -->
+
+		<!-- First try for the online version of jQuery-->
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+		
+		<!-- If no online access, fallback to our hardcoded version of jQuery -->
+		<script>window.jQuery || document.write('<script src="js/jquery-2.2.3.min.js"><\/script>')</script>
+		
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- helper JS -->
+		<script src="js/MyAccount-helper.js"></script>
+
+		<!-- Custom JS -->
+		<script src="js/MyAccount-script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,160 @@
+/*----------- global style ----------*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 140px;
+}
+
+.border-class {
+	border-style: groove;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 25px;
+}
+
+/*--------- navabr ------------*/
+
+#logInBtn {
+	margin-top: 25px;
+}
+
+
+nav {
+	width: 100%;
+    height: 60px;
+}
+
+/*-------- footer -------------*/
+
+.footer {
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    color: white;
+}
+
+.footer-ul {
+	padding-top: 30px;
+}
+
+.footer-ul li{
+	list-style-type:none;
+	display: inline;
+	padding-left: 30px;
+}
+
+
+/*----------- carousel---------*/
+#carousel-container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+.carousel-inner .item {
+	height: 400px;
+}
+
+#slide1 {
+	background: url('http://placehold.it/1200x400') top center no-repeat;
+}
+
+#slide2 {
+	background: url('http://placehold.it/1200x400') top center no-repeat;
+}
+
+#slide3 {
+	background: url('http://placehold.it/1200x400') top center no-repeat;
+}
+
+
+/*---------- content -----------------*/
+
+#resetBtn {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+#applyBtn {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+#search-bar-form {
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+#toolbar-homepage {
+	margin-right:20px;
+}
+
+#toolbar-homepage button {
+	color: #64C3E3;
+}
+
+/*--------- profile modal---------------*/
+
+.well li {
+	font-size: 20px;
+	font-weight: normal;
+	list-style-type:none;
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#profile-photo {
+	text-align: center;
+}
+
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.carousel-inner .item {
+		height: 310px;
+	}
+   #slide1 {
+		background: url('http://placehold.it/900x300') top center no-repeat;
+	}
+
+	#slide2 {
+		background: url('http://placehold.it/900x300') top center no-repeat;
+	}
+
+	#slide3 {
+		background: url('http://placehold.it/900x300') top center no-repeat;
+	}
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	.carousel-inner .item {
+		height: 500px;
+	}
+   #slide1 {
+		background: url('http://placehold.it/1500x500') top center no-repeat;
+	}
+
+	#slide2 {
+		background: url('http://placehold.it/1500x500') top center no-repeat;
+	}
+
+	#slide3 {
+		background: url('http://placehold.it/1500x500') top center no-repeat;
+	}
+   
+}
